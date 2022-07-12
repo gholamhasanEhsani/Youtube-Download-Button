@@ -11,14 +11,15 @@ a.style.fontFamily = "Vazirmatn";
 a.style.background = "#EA3323";
 a.style.color = "white"
 a.style.padding = "8px";
-a.style.borderRadius = "3px";
+a.style.borderRadius = "5px";
 a.style.position = "fixed";
 a.style.left = "15px";
 a.style.bottom = "15px";
 a.style.fontSize = "20px";
-a.addEventListener("click", ()=>{
+a.style.zIndex = 100;
+a.addEventListener("click", () => {
    a.style.transform = "scale(.9)"
-   setTimeout(()=>a.style.transform = "scale(1)", 35);
+   setTimeout(() => a.style.transform = "scale(1)", 35);
    window.location = `https://upull.me/#${window.location.href}`
 })
 document.body.appendChild(a);
